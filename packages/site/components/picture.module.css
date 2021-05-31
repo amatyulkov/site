@@ -1,0 +1,12 @@
+.figure img {
+  max-width: 100%;
+  display: block;
+  border-radius: 6px;
+}
+
+@media all and (min-width: 768px) {
+  .imageContainer {
+    margin-left: calc(var(--padding-xl) * -1);
+    margin-right: calc(var(--padding-xl) * -1);
+  }
+}

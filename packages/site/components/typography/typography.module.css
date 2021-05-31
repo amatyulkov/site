@@ -1,0 +1,106 @@
+.typographyRoot {
+  --title-offset: 11px;
+  --title-gain: calc(var(--line) - var(--title-offset));
+
+  --h2-offset: 2px;
+  --h2-gain: calc(var(--line) - var(--h2-offset));
+
+  --h3-offset: 5px;
+  --h3-gain: calc(var(--line) - var(--h3-offset));
+
+  --excerpt-offset: 23px;
+  --excerpt-gain: calc(var(--line) - var(--excerpt-offset));
+
+  --hr-offset: 16px;
+
+  --image-wrapper-offset: 16px;
+  --image-wrapper-gain: calc(var(--line) - var(--image-wrapper-offset));
+}
+
+.typographyContainer {
+  max-width: 60ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.typographyContainer::before {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.typographyRoot {
+  padding-top: 7px;
+  padding-bottom: 17px;
+}
+
+.typographyRoot h1 {
+  padding-top: var(--title-offset);
+  padding-bottom: var(--title-gain);
+  font-size: var(--title-font-size);
+  line-height: var(--title-line-height);
+}
+
+.typographyRoot h2 {
+  padding-top: var(--h2-offset);
+  padding-bottom: var(--h2-gain);
+}
+
+.typographyRoot h3 {
+  padding-top: var(--h3-offset);
+  padding-bottom: var(--h3-gain);
+}
+
+.typographyRoot * + * {
+  margin-top: var(--line);
+}
+
+.typographyRoot li + li {
+  margin-top: 0;
+}
+
+.typographyRoot li + li > p {
+  margin-top: var(--line);
+}
+
+.typographyRoot hr::after {
+  margin-top: var(--hr-offset);
+}
+
+.typographyRoot .excerpt {
+  padding-top: var(--excerpt-offset);
+  padding-bottom: var(--excerpt-gain);
+}
+
+.typographyRoot :global(.image-wrapper) {
+  padding-top: var(--image-wrapper-offset);
+  padding-bottom: var(--image-wrapper-gain);
+}
+
+@media screen and (min-width: 768px) {
+  .typographyRoot :global(.code-block__wrapper) {
+    margin-left: calc(var(--padding-xl) * -1);
+    margin-right: calc(var(--padding-xl) * -1);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .typographyRoot :global(.code-block__wrapper) {
+    width: var(--code-block-width);
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.typographyRoot :global(.code-block__wrapper--theater) {
+  background-color: var(--code-block-bg);
+  width: 100vw;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.typographyRoot :global(.code-block) {
+  max-width: 48em;
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -1,0 +1,35 @@
+:root {
+  --body-background: #ffffff;
+  --body-color: #303030;
+
+  --grid-section-color: #000000;
+  --grid-subsection-color: rgba(0, 0, 0, 0.5);
+
+  --code-block-bg: #f8f8f8;
+
+  --code-comment-color: #2e7d32; /* AA: green on #f8f8f8 */
+  --code-keyword-color: #1565c0; /* AA: blue on #f8f8f8 */
+  --code-constant-color: #007e8c; /* AA: teal on #f8f8f8 */
+
+  /* if I need a gray -- #707070 will do */
+}
+
+html {
+  background-color: var(--body-background);
+  color: var(--body-color);
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  :root {
+    --body-background: #202020;
+    --body-color: #d0d0d0;
+
+    --grid-section-color: #ffffff;
+    --grid-subsection-color: rgba(255, 255, 255, 0.5);
+
+    --code-block-bg: #181818;
+    --code-comment-color: #36933b;
+    --code-keyword-color: #1a7ff2;
+    --code-constant-color: #008e9e;
+  }
+}

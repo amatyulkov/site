@@ -1,0 +1,8 @@
+.box {
+  width: 300px;
+  width: calc(80ch + 40px);
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}

@@ -1,0 +1,22 @@
+.debug {
+  overflow-x: auto;
+  position: absolute;
+  bottom: 0;
+  left: calc(-1 * var(--padding-m));
+  right: calc(-1 * var(--padding-m));
+  width: 100%;
+  color: #fff;
+  padding: var(--padding-m);
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.root {
+  position: relative;
+}
+
+.debug + img,
+.debug > * + * {
+  margin-top: 0;
+}

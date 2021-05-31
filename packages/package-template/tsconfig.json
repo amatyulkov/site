@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true
+  },
+  "lib": ["esnext"],
+  "exclude": ["node_modules"],
+  "include": ["./index.ts"]
+}

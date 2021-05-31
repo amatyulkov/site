@@ -1,0 +1,7 @@
+.theater {
+  background-color: var(--code-block-bg);
+}
+
+.wrapper .block {
+  display: block;
+}

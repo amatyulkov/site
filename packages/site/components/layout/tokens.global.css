@@ -1,0 +1,16 @@
+:root {
+  /* Padding tokens */
+  --padding-xs: 1px;
+  --padding-s: 4px;
+  --padding-m: 12px;
+  --padding-l: 24px;
+  --padding-xl: 48px;
+  --padding-xxl: 96px;
+
+  /* Margin tokens */
+  --margin-xl: 48px;
+
+  /* Border tokens */
+  --border-thin: 1px;
+  --border-thick: 2px;
+}

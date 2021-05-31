@@ -1,0 +1,17 @@
+.list {
+  padding-left: 0;
+  list-style: none;
+}
+
+.traitName {
+  font-size: var(--small-font-size);
+  line-height: var(--small-line-height);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-style: normal;
+}
+
+.traitName,
+.traitAtomicValue {
+  white-space: nowrap;
+}

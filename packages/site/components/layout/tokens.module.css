@@ -1,0 +1,23 @@
+.paddingXs {
+  padding: var(--padding-xs);
+}
+
+.paddingS {
+  padding: var(--padding-s);
+}
+
+.paddingM {
+  padding: var(--padding-m);
+}
+
+.paddingL {
+  padding: var(--padding-l);
+}
+
+.paddingXl {
+  padding: var(--padding-xl);
+}
+
+.paddingXxl {
+  padding: var(--padding-xxl);
+}

@@ -1,0 +1,13 @@
+.recentPostsList {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.recentPostsListItem {
+  display: block;
+}
+
+.recentPostsListItem + .recentPostsListItem {
+  margin-top: calc(var(--line) * 2);
+}

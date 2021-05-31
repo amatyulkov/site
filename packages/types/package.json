@@ -1,0 +1,7 @@
+{
+  "name": "@site/types",
+  "version": "0.0.0",
+  "description": "Shared types between content server and next app",
+  "main": "index.ts",
+  "license": "MIT"
+}

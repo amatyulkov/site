@@ -1,0 +1,154 @@
+/* VARIABLES  */
+:root {
+  /* fonts */
+  --body-font-family: 'Roboto', Helvetica, sans-serif;
+  --heading-font-family: 'Playfair Display', 'Georgia', 'serif';
+  --code-font-family: 'Fira Code', 'Andale Mono', monospace;
+
+  /* tokens */
+  --title-font-size: 72px;
+  --title-line-height: 96px;
+
+  --h1-font-size: 48px;
+  --h1-line-height: 72px;
+
+  --h2-font-size: 36px;
+  --h2-line-height: 48px;
+
+  --h3-font-size: 30px;
+  --h3-line-height: 48px;
+
+  --h4-font-size: 24px;
+  --h4-line-height: 36px;
+
+  --h5-font-size: 18px;
+  --h5-line-height: 24px;
+
+  --h6-font-size: 14px;
+  --h6-line-height: 24px;
+
+  --small-font-size: 14px;
+  --small-line-height: 24px;
+
+  --excerpt-font-size: 18px;
+  --excerpt-line-height: 24px;
+}
+
+/* RESET */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+hr,
+pre {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+blockquote,
+figure {
+  margin: 0;
+}
+
+ul,
+ol,
+dl {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+/* GLOBAL STYLES */
+
+body {
+  font-family: var(--body-font-family);
+  font-size: calc(var(--line) / 3 * 2);
+  line-height: var(--line);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.title {
+  font-family: var(--heading-font-family);
+}
+
+pre,
+code {
+  font-family: var(--code-font-family);
+}
+
+h1 {
+  font-size: var(--h1-font-size);
+  line-height: var(--h1-line-height);
+}
+
+h2 {
+  font-size: var(--h2-font-size);
+  line-height: var(--h2-line-height);
+}
+
+h3 {
+  font-size: var(--h3-font-size);
+  line-height: var(--h3-line-height);
+}
+
+h4 {
+  font-size: var(--h4-font-size);
+  line-height: var(--h4-line-height);
+}
+
+h5 {
+  font-size: var(--h5-font-size);
+  line-height: var(--h5-line-height);
+}
+
+h6 {
+  font-size: var(--h6-font-size);
+  line-height: var(--h6-line-height);
+  font-weight: 600;
+}
+
+.title {
+  font-size: var(--title-font-size);
+  line-height: var(--title-line-height);
+  font-weight: 500;
+}
+
+blockquote {
+  padding-top: var(--line);
+  padding-bottom: var(--line);
+  padding-left: calc(var(--padding-xl) - var(--border-thick));
+  padding-right: var(--padding-xl);
+  border-left: var(--border-thick) solid;
+}
+
+ul,
+ol {
+  padding-left: var(--padding-xl);
+}
+
+hr {
+  border: 0;
+  height: var(--line);
+}
+
+hr::after {
+  content: ' ';
+  display: block;
+  border: 0;
+  border-bottom: 1px solid var(--body-color);
+  margin-top: calc(var(--line) / 2 - 1px);
+}
+
+.excerpt {
+  font-size: var(--excerpt-font-size);
+  line-height: var(--excerpt-line-height);
+}
