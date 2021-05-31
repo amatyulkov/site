@@ -6,8 +6,15 @@ import '../components/code-block.global.css';
 import Header from '@/components/header/header';
 import { getPublicRuntimeConfig } from '@/environment';
 import { Baseline } from '@/components/layout/baseline';
+import React from 'react';
 
-export default function App({ Component, pageProps }) {
+export default function App({
+  Component,
+  pageProps,
+}: {
+  Component: React.ComponentType;
+  pageProps: Record<string, unknown>;
+}) {
   const config = getPublicRuntimeConfig();
 
   return (
